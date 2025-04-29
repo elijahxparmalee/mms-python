@@ -5,7 +5,7 @@ def log(string):
     sys.stderr.write("{}\n".format(string))
     sys.stderr.flush()
 
-def main():
+def solveMaze():
     log("Running...")
     API.setColor(0, 0, "G")
     API.setText(0, 0, "abc")
@@ -16,5 +16,4 @@ def main():
             API.turnRight()
         API.moveForward()
 
-if __name__ == "__main__":
-    main()
+
